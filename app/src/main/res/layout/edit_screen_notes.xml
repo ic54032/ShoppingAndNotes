@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <Button
+        android:id="@+id/bBackToNotesList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="16dp"
+        android:background="@null"
+        android:drawableLeft="@drawable/round_arrow_back"
+        android:text="Natrag"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bDeleteNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="10dp"
+        android:background="@null"
+        android:drawableLeft="@drawable/outline_delete_24"
+        android:text="Obriši"
+        android:textColor="#EA3546"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bSaveNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Spremi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@null"
+        android:drawableRight="@drawable/outline_assignment_turned_in_24"
+        android:textColor="#3F784C"
+        android:textSize="16dp"/>
+
+    <Button
+        android:id="@+id/bAddShoppingItemToNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="12dp"
+        android:background="@null"
+        android:drawableRight="@drawable/outline_add_box_24"
+        android:text="Dodaj artikl"
+        android:textColor="#054A91"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/bSeeAddedItems"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="12dp"
+        android:background="@null"
+        android:text="pregled povezanih artikala"
+        android:textSize="15.5sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:drawableRight="@drawable/baseline_content_paste_search_24" />
+
+    <EditText
+        android:id="@+id/etNoteTitle"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@null"
+        android:hint="Upišite naslov bilješke"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bSaveNote"
+        android:maxLines="1"
+        android:inputType="textCapSentences"/>
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bAddShoppingItemToNote"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNoteTitle"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_marginBottom="15dp">
+
+        <EditText
+            android:id="@+id/etNote"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@null"
+            android:hint="Upišite tekst bilješke"
+            android:minHeight="50dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:scrollbars="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etNoteTitle"
+            app:layout_constraintVertical_bias="0.037"
+            android:inputType="textCapSentences|textMultiLine"/>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

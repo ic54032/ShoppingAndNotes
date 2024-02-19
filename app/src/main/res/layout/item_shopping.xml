@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:paddingStart="5dp"
+    android:paddingEnd="5dp"
+    android:background="@drawable/item_outline"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp">
+
+    <TextView
+        android:id="@+id/tvNameShoppingItem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Examlpe"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.03"
+        android:textColor="@color/black"
+        android:maxLines="1"/>
+
+    <TextView
+        android:id="@+id/tvAmountShoppingItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:paddingStart="5dp"
+        android:text="amountExample"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tvAmountLabel"
+        app:layout_constraintTop_toBottomOf="@+id/tvNameShoppingItem"
+        app:layout_constraintVertical_bias="0.0"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tvAmountLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:text="Količina:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNameShoppingItem"
+        app:layout_constraintVertical_bias="0.0"
+        android:textSize="16sp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
